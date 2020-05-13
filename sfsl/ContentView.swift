@@ -17,19 +17,10 @@ struct ContentView: View {
                 Text("首页")
             }
             
+            
             StoreView().tabItem {
                 Image(systemName: "cart")
                 Text("挖矿")
-            }
-            
-//            NewsView()
-//                .tabItem {
-//                    Image(systemName: "message")
-//                    Text("资讯")
-//            }
-            TestView().tabItem {
-                Image(systemName: "bag.badge.plus")
-                Text("财务")
             }
         }
 //    .navigationBarHidden(true)

@@ -15,6 +15,7 @@ struct LoginView: View {
     
     @State var phone:String=""
     @State var password:String=""
+    @State var viewState = CGSize.zero
     
     var body: some View {
         NavigationView{
@@ -86,6 +87,7 @@ struct LoginView: View {
                         .background(Color("loginAndRegist").cornerRadius(30))
                         .shadow(color: Color.gray, radius: 5, x: 0, y: 0)
                         .padding(.top,20)
+//                        .opacity(0.1)
                 })
                 HStack{
                     NavigationLink(destination: RegistView().navigationBarTitle(Text("")).navigationBarHidden(true)) {
@@ -107,6 +109,7 @@ struct LoginView: View {
                 
                 
             }
+//            .offset(x: viewState.width,y: viewState.height)
             .frame(width: width_main, height: high_main)
             .background(Image("login1")
             .resizable()
@@ -122,6 +125,9 @@ struct LoginView: View {
                         .filter({$0.isKeyWindow}).first
                     keyWindow!.endEditing(true)
             }
+//            .gesture(DragGesture().onChanged{ value in
+//                self.viewState=value.translation
+//            })
             .navigationBarTitle(Text(""))
             .navigationBarHidden(true)
         }
