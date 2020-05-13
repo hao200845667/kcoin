@@ -128,6 +128,7 @@ struct LoginView: View {
 //            .gesture(DragGesture().onChanged{ value in
 //                self.viewState=value.translation
 //            })
+                //测试
             .navigationBarTitle(Text(""))
             .navigationBarHidden(true)
         }
