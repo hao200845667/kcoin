@@ -103,15 +103,10 @@ struct Login: View {
                     {
                         Text("登 陆").foregroundColor(Color("Color1"))
                     }
-                    
-                    //                    }
-                    //                    .navigationBarTitle("",displayMode: .large)
-                    //                    .navigationBarHidden(true)
-                    
                     Button(action: {
                         self.showingAlert = true
                     }) {
-                        Text("注 册").foregroundColor(Color("Color1")).background(Image("login"))
+                        Text("注 册").foregroundColor(Color("Color1"))
                     }.alert(isPresented: $showingAlert){
                         Alert(title: Text("注意"),
                               message: Text("功能正在开发中，敬请期待"),
@@ -121,6 +116,8 @@ struct Login: View {
                 }.padding(.top , 20)
                 
             }.padding(.bottom, high_main / 5)
+            .background(Image("login") .renderingMode(.original)
+            .aspectRatio(contentMode: .fit))
         }
     }
     

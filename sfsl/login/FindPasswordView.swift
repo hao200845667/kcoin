@@ -1,14 +1,14 @@
 //
-//  RegistView.swift
+//  FindPasswordView.swift
 //  sfsl
 //
-//  Created by 隔壁家的电冰箱。 on 2020/5/11.
+//  Created by 隔壁家的电冰箱。 on 2020/5/13.
 //  Copyright © 2020 隔壁家的电冰箱。. All rights reserved.
 //
 
 import SwiftUI
 
-struct RegistView: View {
+struct FindPasswordView: View {
     var width_main = UIScreen.main.bounds.width
     var high_main = UIScreen.main.bounds.height
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
@@ -30,7 +30,7 @@ struct RegistView: View {
                         self.presentationMode.wrappedValue.dismiss()
                     } , label: {Image("back")} )
                     Spacer()
-                    Text("注册")
+                    Text("找回密码")
                         .font(.headline)
                     Spacer()
                 }
@@ -60,12 +60,10 @@ struct RegistView: View {
                             TextField("请输入手机号码", text: self.$phone)
                                 .frame(width: 270,height: 50)
                                 .padding(.leading)
-                            //                            .contentShape(RoundedRectangle(cornerRadius: 30))
                             
                         }
                         .contentShape(RoundedRectangle(cornerRadius: 10))
 
-                        
                     }
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
                     
@@ -142,25 +140,6 @@ struct RegistView: View {
                         
                     }
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
-                    HStack(spacing: 0){
-                        VStack{
-                            Image("password")
-                                .renderingMode(.original)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: 35)
-                        }
-                        VStack {
-                            SecureField("请再次输入密码", text: self.$phone)
-                                .frame(width: 270,height: 50)
-                                .padding(.leading)
-                        }
-                        .contentShape(RoundedRectangle(cornerRadius: 10))
-
-                        
-                    }
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
-                    
                 }.shadow(color: Color.gray, radius: 5, x: 0, y: 1)
                     .frame(width: width_main - 60)
                     .padding(.top,10)
@@ -184,16 +163,16 @@ struct RegistView: View {
             .edgesIgnoringSafeArea(.top)
             )
                 .onTapGesture {
-                                  let keyWindow = UIApplication.shared.connectedScenes
-                                      .filter({$0.activationState == .foregroundActive})
-                                      .map({$0 as? UIWindowScene})
-                                      .compactMap({$0})
-                                      .first?.windows
-                                      .filter({$0.isKeyWindow}).first
-                                  keyWindow!.endEditing(true)
-                          }
-                .navigationBarTitle(Text(""))
-                .navigationBarHidden(true)
+                    let keyWindow = UIApplication.shared.connectedScenes
+                        .filter({$0.activationState == .foregroundActive})
+                        .map({$0 as? UIWindowScene})
+                        .compactMap({$0})
+                        .first?.windows
+                        .filter({$0.isKeyWindow}).first
+                    keyWindow!.endEditing(true)
+            }
+            .navigationBarTitle(Text(""))
+            .navigationBarHidden(true)
         }
     }
     
@@ -218,9 +197,8 @@ struct RegistView: View {
     }
 }
 
-
-struct RegistView_Previews: PreviewProvider {
+struct FindPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        RegistView()
+        FindPasswordView()
     }
 }

@@ -23,6 +23,8 @@
 		046295D92468EE0E00F7FE2C /* LoginAndRegistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295D82468EE0E00F7FE2C /* LoginAndRegistView.swift */; };
 		046295DB2468FB1000F7FE2C /* RegistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295DA2468FB1000F7FE2C /* RegistView.swift */; };
 		046295E12469517B00F7FE2C /* Kingfisher.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0495ABA123AD0ADD008EAE17 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		046295E3246B8EB600F7FE2C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295E2246B8EB600F7FE2C /* LoginView.swift */; };
+		046295E5246B968E00F7FE2C /* FindPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295E4246B968E00F7FE2C /* FindPasswordView.swift */; };
 		0470F9A023B0AF5200D6F4D3 /* HKCBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470F99A23B0AF5200D6F4D3 /* HKCBannerView.swift */; };
 		0470F9A123B0AF5200D6F4D3 /* HKCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470F99B23B0AF5200D6F4D3 /* HKCycleViewCell.swift */; };
 		0470F9A223B0AF5200D6F4D3 /* HKPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470F99C23B0AF5200D6F4D3 /* HKPageControl.swift */; };
@@ -37,7 +39,6 @@
 		0495F8012464FA78007A8544 /* KingfisherSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495ABA323AD0ADD008EAE17 /* KingfisherSwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0495F8022464FA78007A8544 /* KingfisherSwiftUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0495ABA323AD0ADD008EAE17 /* KingfisherSwiftUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0495F8042464FBED007A8544 /* YKD_Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495F8032464FBED007A8544 /* YKD_Url.swift */; };
-		0495F8082464FCF9007A8544 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495F8072464FCF9007A8544 /* Login.swift */; };
 		0495F80A2464FD96007A8544 /* Login_DATA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495F8092464FD96007A8544 /* Login_DATA.swift */; };
 		04D17FB423B353A300B4212B /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D17FB323B353A300B4212B /* StoreView.swift */; };
 		04D17FB923B4B8A500B4212B /* Goods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D17FB823B4B8A500B4212B /* Goods.swift */; };
@@ -118,6 +119,8 @@
 		04330EC9238F800B00CE0714 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		046295D82468EE0E00F7FE2C /* LoginAndRegistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndRegistView.swift; sourceTree = "<group>"; };
 		046295DA2468FB1000F7FE2C /* RegistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistView.swift; sourceTree = "<group>"; };
+		046295E2246B8EB600F7FE2C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		046295E4246B968E00F7FE2C /* FindPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordView.swift; sourceTree = "<group>"; };
 		0470F99A23B0AF5200D6F4D3 /* HKCBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCBannerView.swift; sourceTree = "<group>"; };
 		0470F99B23B0AF5200D6F4D3 /* HKCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCycleViewCell.swift; sourceTree = "<group>"; };
 		0470F99C23B0AF5200D6F4D3 /* HKPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKPageControl.swift; sourceTree = "<group>"; };
@@ -130,7 +133,6 @@
 		0495F7D92464F966007A8544 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		0495F7E42464FA64007A8544 /* HandyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HandyJSON.xcodeproj; path = "HandyJSON-master/HandyJSON.xcodeproj"; sourceTree = "<group>"; };
 		0495F8032464FBED007A8544 /* YKD_Url.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKD_Url.swift; sourceTree = "<group>"; };
-		0495F8072464FCF9007A8544 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		0495F8092464FD96007A8544 /* Login_DATA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login_DATA.swift; path = ../../../Downloads/Login_DATA.swift; sourceTree = "<group>"; };
 		04D17FB323B353A300B4212B /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		04D17FB823B4B8A500B4212B /* Goods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goods.swift; sourceTree = "<group>"; };
@@ -216,9 +218,10 @@
 		046295D32468ED7700F7FE2C /* login */ = {
 			isa = PBXGroup;
 			children = (
-				0495F8072464FCF9007A8544 /* Login.swift */,
 				046295D82468EE0E00F7FE2C /* LoginAndRegistView.swift */,
 				046295DA2468FB1000F7FE2C /* RegistView.swift */,
+				046295E2246B8EB600F7FE2C /* LoginView.swift */,
+				046295E4246B968E00F7FE2C /* FindPasswordView.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -406,11 +409,12 @@
 				041AF48A2462B89F00DF511D /* Toast.swift in Sources */,
 				046295DB2468FB1000F7FE2C /* RegistView.swift in Sources */,
 				0470F9A323B0AF5200D6F4D3 /* HKCycleView.swift in Sources */,
+				046295E3246B8EB600F7FE2C /* LoginView.swift in Sources */,
 				0470F9A123B0AF5200D6F4D3 /* HKCycleViewCell.swift in Sources */,
 				04D17FB923B4B8A500B4212B /* Goods.swift in Sources */,
 				0470F9A423B0AF5200D6F4D3 /* HKCBannerController.swift in Sources */,
+				046295E5246B968E00F7FE2C /* FindPasswordView.swift in Sources */,
 				041AF48B2462B89F00DF511D /* ToastCenter.swift in Sources */,
-				0495F8082464FCF9007A8544 /* Login.swift in Sources */,
 				041AF4882462B89F00DF511D /* ToastWindow.swift in Sources */,
 				0470F9A723B1BC1400D6F4D3 /* HomeView.swift in Sources */,
 				0470F9A223B0AF5200D6F4D3 /* HKPageControl.swift in Sources */,

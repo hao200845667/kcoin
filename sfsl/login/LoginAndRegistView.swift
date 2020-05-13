@@ -31,7 +31,7 @@ struct LoginAndRegistView: View {
                                 .shadow(color: Color.gray, radius: 5, x: 0, y: 0)
                             
                         }
-                        NavigationLink(destination: Text("123")) {
+                        NavigationLink(destination: LoginView().navigationBarTitle(Text("")).navigationBarHidden(true)) {
                             Text("登录")
                                 .foregroundColor(Color.white)
                                 .frame(width: width_main-100,height: 60)
@@ -56,7 +56,7 @@ struct LoginAndRegistView: View {
                 .navigationBarHidden(true)
             
         }
-//                                .environment(\.colorScheme, .dark)
+//                                        .environment(\.colorScheme, .dark)
         
     }
 }
