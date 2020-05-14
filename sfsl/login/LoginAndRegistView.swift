@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Introspect
 
 struct LoginAndRegistView: View {
     var width_main = UIScreen.main.bounds.width
@@ -39,6 +40,7 @@ struct LoginAndRegistView: View {
                                 .shadow(color: Color.gray, radius: 5, x: 0, y: 0)
                         }
                         .padding(.top,180)
+
                         
                     }
                     .padding(.top,high_main-400)
@@ -54,9 +56,11 @@ struct LoginAndRegistView: View {
             )
                 .navigationBarTitle(Text(""))
                 .navigationBarHidden(true)
-            
+            .modifier(FullScreenSwipBack())
+
         }
-//                                        .environment(\.colorScheme, .dark)
+        
+        //                                        .environment(\.colorScheme, .dark)
         
     }
 }

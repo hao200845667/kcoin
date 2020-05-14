@@ -133,6 +133,8 @@ struct LoginView: View {
                 //测试
             .navigationBarTitle(Text(""))
             .navigationBarHidden(true)
+//            .modifier(FullScreenSwipBack())
+
         }
     }
     

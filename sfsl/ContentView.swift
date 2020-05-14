@@ -17,15 +17,12 @@ struct ContentView: View {
             if showflag{
                 LoginAndRegistView(showflag: self.$showflag)
             }else{
-                //                withAnimation(.default) {
                 StartView()
-                //                }
-                
-                //                .environment(\.colorScheme, .dark)
             }
             
         }
-        .animation(Animation.easeInOut.speed(0.3))
+            //.environment(\.colorScheme, .dark)
+        .animation(Animation.easeInOut)
         
     }
 }

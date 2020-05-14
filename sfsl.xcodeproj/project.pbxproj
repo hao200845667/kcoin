@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,7 @@
 		04629629246D3A8000F7FE2C /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04629624246D3A7F00F7FE2C /* ToastCenter.swift */; };
 		0462962A246D3A8000F7FE2C /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04629625246D3A8000F7FE2C /* ToastWindow.swift */; };
 		0462962C246D3B1300F7FE2C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462962B246D3B1300F7FE2C /* StartView.swift */; };
+		04629637246D414200F7FE2C /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 04629636246D414200F7FE2C /* Introspect */; };
 		0470F9A723B1BC1400D6F4D3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470F9A623B1BC1400D6F4D3 /* HomeView.swift */; };
 		0495F7FF2464FA70007A8544 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495F7F02464FA64007A8544 /* HandyJSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0495F8002464FA70007A8544 /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0495F7F02464FA64007A8544 /* HandyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -158,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0495F7FF2464FA70007A8544 /* HandyJSON.framework in Frameworks */,
+				04629637246D414200F7FE2C /* Introspect in Frameworks */,
 				04629619246D390900F7FE2C /* Alamofire.framework in Frameworks */,
 				0462961B246D390E00F7FE2C /* Kingfisher.framework in Frameworks */,
 				04629618246D390500F7FE2C /* HandyJSON.framework in Frameworks */,
@@ -347,6 +349,7 @@
 			);
 			name = sfsl;
 			packageProductDependencies = (
+				04629636246D414200F7FE2C /* Introspect */,
 			);
 			productName = sfsl;
 			productReference = 04330EB2238F7D1700CE0714 /* KC Miner.app */;
@@ -377,6 +380,7 @@
 			);
 			mainGroup = 04330EA9238F7D1700CE0714;
 			packageReferences = (
+				04629635246D414200F7FE2C /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = 04330EB3238F7D1700CE0714 /* Products */;
 			projectDirPath = "";
@@ -680,6 +684,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04629635246D414200F7FE2C /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/timbersoftware/SwiftUI-Introspect.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04629636246D414200F7FE2C /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04629635246D414200F7FE2C /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04330EAA238F7D1700CE0714 /* Project object */;
 }
