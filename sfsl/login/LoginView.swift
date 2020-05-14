@@ -16,7 +16,8 @@ struct LoginView: View {
     @State var phone:String=""
     @State var password:String=""
     @State var viewState = CGSize.zero
-    
+    @Binding var showflag:Bool
+
     var body: some View {
         NavigationView{
             VStack(){
@@ -80,6 +81,7 @@ struct LoginView: View {
                     .frame(width: width_main - 60)
                     .padding(.top,10)
                 Button(action: {
+                    self.showflag=false
                 }, label: {
                     Text("登陆")
                         .foregroundColor(Color.white)
@@ -138,6 +140,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(showflag: .constant(true))
     }
 }

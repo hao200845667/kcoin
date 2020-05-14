@@ -11,7 +11,7 @@ import SwiftUI
 struct LoginAndRegistView: View {
     var width_main = UIScreen.main.bounds.width
     var high_main = UIScreen.main.bounds.height
-    
+    @Binding var showflag:Bool
     var body: some View {
         NavigationView{
             VStack(alignment: .center, spacing: 0 ){
@@ -31,7 +31,7 @@ struct LoginAndRegistView: View {
                                 .shadow(color: Color.gray, radius: 5, x: 0, y: 0)
                             
                         }
-                        NavigationLink(destination: LoginView().navigationBarTitle(Text("")).navigationBarHidden(true)) {
+                        NavigationLink(destination: LoginView(showflag: self.$showflag).navigationBarTitle(Text("")).navigationBarHidden(true)) {
                             Text("登录")
                                 .foregroundColor(Color.white)
                                 .frame(width: width_main-100,height: 60)
@@ -63,6 +63,6 @@ struct LoginAndRegistView: View {
 
 struct LoginAndRegistView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginAndRegistView()
+        LoginAndRegistView(showflag: .constant(true))
     }
 }

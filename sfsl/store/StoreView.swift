@@ -32,14 +32,11 @@ struct StoreView: View {
                     }
                 }
             })
-                .background(Image("Image")
-                    .renderingMode(.original)
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all))
-            .navigationBarTitle(Text("矿机商城"),displayMode: .inline)
-
+                .background(Color("background"))
+                .navigationBarTitle(Text("矿机商城"),displayMode: .inline)
+            
         }
-
+        
     }
 }
 
@@ -60,22 +57,23 @@ struct ExtractedView: View {
                 HStack(){
                     VStack(){
                         Text("KCOIN")
+                            .font(.caption)
                             .foregroundColor(Color.yellow)
-                            .padding(.horizontal,3)
-                            .padding(.vertical,4)
+                            .padding(.vertical,1)
+                            
                         Text("算力")
+                            .font(.caption)
                             .foregroundColor(Color.white)
                             .padding(.horizontal,9)
-                            .padding(.vertical,4)
+                            .padding(.vertical,1)
                             .background(Color.yellow)
                         
                     }
-                    .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.yellow,lineWidth: 2))
+                    .overlay(RoundedRectangle(cornerRadius: 3).stroke(Color.yellow,lineWidth: 2))
                     Text(storeview_data.title)
                         .foregroundColor(Color.gray)
-                        .padding(.leading,5)
+                        .padding(.leading,10)
                     Spacer()
-                    
                 }
                 .padding()
                 Divider()
@@ -115,13 +113,14 @@ struct ExtractedView: View {
                 .padding()
                 
             }
-            .background(Image("Image1")
-            .renderingMode(.original)
-            .resizable()
-            )
+//            .background(Image("Image1")
+//            .renderingMode(.original)
+//            .resizable()
+//            )
+                .background(Color.white)
                 .frame(width: width_main - 30)
                 .font(.footnote)
-                .background(Color("Color"))
+//                .background(Color("Color"))
                 .cornerRadius(20)
                 .padding()
                 .shadow(radius: 10)

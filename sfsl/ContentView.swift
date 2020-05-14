@@ -10,24 +10,23 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var showflag:Bool = true
+    
     var body: some View {
-        TabView{
-            HomeView().tabItem {
-                Image(systemName: "folder")
-                Text("首页")
+        VStack{
+            if showflag{
+                LoginAndRegistView(showflag: self.$showflag)
+            }else{
+                //                withAnimation(.default) {
+                StartView()
+                //                }
+                
+                //                .environment(\.colorScheme, .dark)
             }
             
-            
-            StoreView().tabItem {
-                Image(systemName: "cart")
-                Text("挖矿")
-            }
         }
-//    .navigationBarHidden(true)
-//        .navigationBarBackButtonHidden(true)
-
-//                .edgesIgnoringSafeArea(.top)
-//                .environment(\.colorScheme, .dark)
+        .animation(Animation.easeInOut.speed(0.3))
+        
     }
 }
 
