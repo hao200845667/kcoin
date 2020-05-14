@@ -24,18 +24,24 @@
 		046295DB2468FB1000F7FE2C /* RegistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295DA2468FB1000F7FE2C /* RegistView.swift */; };
 		046295E3246B8EB600F7FE2C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295E2246B8EB600F7FE2C /* LoginView.swift */; };
 		046295E5246B968E00F7FE2C /* FindPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295E4246B968E00F7FE2C /* FindPasswordView.swift */; };
-		0470F9A023B0AF5200D6F4D3 /* HKCBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470F99A23B0AF5200D6F4D3 /* HKCBannerView.swift */; };
-		0470F9A123B0AF5200D6F4D3 /* HKCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470F99B23B0AF5200D6F4D3 /* HKCycleViewCell.swift */; };
-		0470F9A223B0AF5200D6F4D3 /* HKPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470F99C23B0AF5200D6F4D3 /* HKPageControl.swift */; };
-		0470F9A323B0AF5200D6F4D3 /* HKCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470F99D23B0AF5200D6F4D3 /* HKCycleView.swift */; };
-		0470F9A423B0AF5200D6F4D3 /* HKCBannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470F99E23B0AF5200D6F4D3 /* HKCBannerController.swift */; };
-		0470F9A523B0AF5200D6F4D3 /* HKCycleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470F99F23B0AF5200D6F4D3 /* HKCycleLayout.swift */; };
 		0470F9A723B1BC1400D6F4D3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470F9A623B1BC1400D6F4D3 /* HomeView.swift */; };
 		0495F7FF2464FA70007A8544 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495F7F02464FA64007A8544 /* HandyJSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0495F8002464FA70007A8544 /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0495F7F02464FA64007A8544 /* HandyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0495F8042464FBED007A8544 /* YKD_Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495F8032464FBED007A8544 /* YKD_Url.swift */; };
 		04D17FB423B353A300B4212B /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D17FB323B353A300B4212B /* StoreView.swift */; };
 		04D17FB923B4B8A500B4212B /* Goods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D17FB823B4B8A500B4212B /* Goods.swift */; };
+		D931D07D246D2B67007006BE /* MarqueeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D07A246D2B67007006BE /* MarqueeViewController.swift */; };
+		D931D07E246D2B67007006BE /* JXMarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D07B246D2B67007006BE /* JXMarqueeView.swift */; };
+		D931D07F246D2B67007006BE /* JXMarqueeViewSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D07C246D2B67007006BE /* JXMarqueeViewSwift.swift */; };
+		D931D081246D2B8E007006BE /* Main_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D080246D2B8E007006BE /* Main_Button.swift */; };
+		D931D083246D2CAB007006BE /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D082246D2CAB007006BE /* Main.swift */; };
+		D931D0A9246D2FE2007006BE /* BannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A2246D2FE1007006BE /* BannerData.swift */; };
+		D931D0AA246D2FE2007006BE /* HKCBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A3246D2FE1007006BE /* HKCBannerView.swift */; };
+		D931D0AB246D2FE2007006BE /* HKCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A4246D2FE1007006BE /* HKCycleViewCell.swift */; };
+		D931D0AC246D2FE2007006BE /* HKPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A5246D2FE1007006BE /* HKPageControl.swift */; };
+		D931D0AD246D2FE2007006BE /* HKCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A6246D2FE1007006BE /* HKCycleView.swift */; };
+		D931D0AE246D2FE2007006BE /* HKCBannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A7246D2FE1007006BE /* HKCBannerController.swift */; };
+		D931D0AF246D2FE2007006BE /* HKCycleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A8246D2FE1007006BE /* HKCycleLayout.swift */; };
 		D9A75AA4246C273500995FFC /* Login_DATA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A75AA3246C273500995FFC /* Login_DATA.swift */; };
 		D9A75AB4246C277F00995FFC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A75AAA246C276400995FFC /* Alamofire.framework */; };
 		D9A75AB5246C277F00995FFC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9A75AAA246C276400995FFC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -122,18 +128,24 @@
 		046295DA2468FB1000F7FE2C /* RegistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistView.swift; sourceTree = "<group>"; };
 		046295E2246B8EB600F7FE2C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		046295E4246B968E00F7FE2C /* FindPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordView.swift; sourceTree = "<group>"; };
-		0470F99A23B0AF5200D6F4D3 /* HKCBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCBannerView.swift; sourceTree = "<group>"; };
-		0470F99B23B0AF5200D6F4D3 /* HKCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCycleViewCell.swift; sourceTree = "<group>"; };
-		0470F99C23B0AF5200D6F4D3 /* HKPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKPageControl.swift; sourceTree = "<group>"; };
-		0470F99D23B0AF5200D6F4D3 /* HKCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCycleView.swift; sourceTree = "<group>"; };
-		0470F99E23B0AF5200D6F4D3 /* HKCBannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCBannerController.swift; sourceTree = "<group>"; };
-		0470F99F23B0AF5200D6F4D3 /* HKCycleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCycleLayout.swift; sourceTree = "<group>"; };
 		0470F9A623B1BC1400D6F4D3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0495F7D52464F939007A8544 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0495F7E42464FA64007A8544 /* HandyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HandyJSON.xcodeproj; path = "HandyJSON-master/HandyJSON.xcodeproj"; sourceTree = "<group>"; };
 		0495F8032464FBED007A8544 /* YKD_Url.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKD_Url.swift; sourceTree = "<group>"; };
 		04D17FB323B353A300B4212B /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		04D17FB823B4B8A500B4212B /* Goods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goods.swift; sourceTree = "<group>"; };
+		D931D07A246D2B67007006BE /* MarqueeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeViewController.swift; sourceTree = "<group>"; };
+		D931D07B246D2B67007006BE /* JXMarqueeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXMarqueeView.swift; sourceTree = "<group>"; };
+		D931D07C246D2B67007006BE /* JXMarqueeViewSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXMarqueeViewSwift.swift; sourceTree = "<group>"; };
+		D931D080246D2B8E007006BE /* Main_Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_Button.swift; sourceTree = "<group>"; };
+		D931D082246D2CAB007006BE /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		D931D0A2246D2FE1007006BE /* BannerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerData.swift; sourceTree = "<group>"; };
+		D931D0A3246D2FE1007006BE /* HKCBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCBannerView.swift; sourceTree = "<group>"; };
+		D931D0A4246D2FE1007006BE /* HKCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCycleViewCell.swift; sourceTree = "<group>"; };
+		D931D0A5246D2FE1007006BE /* HKPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKPageControl.swift; sourceTree = "<group>"; };
+		D931D0A6246D2FE1007006BE /* HKCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCycleView.swift; sourceTree = "<group>"; };
+		D931D0A7246D2FE1007006BE /* HKCBannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCBannerController.swift; sourceTree = "<group>"; };
+		D931D0A8246D2FE1007006BE /* HKCycleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCycleLayout.swift; sourceTree = "<group>"; };
 		D9A75AA3246C273500995FFC /* Login_DATA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login_DATA.swift; sourceTree = "<group>"; };
 		D9A75AA5246C276400995FFC /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		D9A75AAB246C277400995FFC /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = "<group>"; };
@@ -189,6 +201,7 @@
 		04330EB4238F7D1700CE0714 /* sfsl */ = {
 			isa = PBXGroup;
 			children = (
+				D931D072246D2B11007006BE /* Main */,
 				046295D32468ED7700F7FE2C /* login */,
 				0495F8032464FBED007A8544 /* YKD_Url.swift */,
 				D9A75AA3246C273500995FFC /* Login_DATA.swift */,
@@ -202,7 +215,6 @@
 				04330EC3238F7D1800CE0714 /* Info.plist */,
 				04330EBD238F7D1800CE0714 /* Preview Content */,
 				04330EC9238F800B00CE0714 /* NewsView.swift */,
-				0470F9A623B1BC1400D6F4D3 /* HomeView.swift */,
 				041C0DDA245F10EA000D9A0D /* TestView.swift */,
 			);
 			path = sfsl;
@@ -225,19 +237,6 @@
 				046295E4246B968E00F7FE2C /* FindPasswordView.swift */,
 			);
 			path = login;
-			sourceTree = "<group>";
-		};
-		0470F99923B0AF5200D6F4D3 /* Banner */ = {
-			isa = PBXGroup;
-			children = (
-				0470F99A23B0AF5200D6F4D3 /* HKCBannerView.swift */,
-				0470F99B23B0AF5200D6F4D3 /* HKCycleViewCell.swift */,
-				0470F99C23B0AF5200D6F4D3 /* HKPageControl.swift */,
-				0470F99D23B0AF5200D6F4D3 /* HKCycleView.swift */,
-				0470F99E23B0AF5200D6F4D3 /* HKCBannerController.swift */,
-				0470F99F23B0AF5200D6F4D3 /* HKCycleLayout.swift */,
-			);
-			path = Banner;
 			sourceTree = "<group>";
 		};
 		047D41CC23ACC381004FF6C5 /* Frameworks */ = {
@@ -265,6 +264,40 @@
 			path = store;
 			sourceTree = "<group>";
 		};
+		D931D072246D2B11007006BE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0470F9A623B1BC1400D6F4D3 /* HomeView.swift */,
+				D931D080246D2B8E007006BE /* Main_Button.swift */,
+				D931D082246D2CAB007006BE /* Main.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D931D079246D2B67007006BE /* JXMarquee_PMD */ = {
+			isa = PBXGroup;
+			children = (
+				D931D07A246D2B67007006BE /* MarqueeViewController.swift */,
+				D931D07B246D2B67007006BE /* JXMarqueeView.swift */,
+				D931D07C246D2B67007006BE /* JXMarqueeViewSwift.swift */,
+			);
+			path = JXMarquee_PMD;
+			sourceTree = "<group>";
+		};
+		D931D0A1246D2FE1007006BE /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				D931D0A2246D2FE1007006BE /* BannerData.swift */,
+				D931D0A3246D2FE1007006BE /* HKCBannerView.swift */,
+				D931D0A4246D2FE1007006BE /* HKCycleViewCell.swift */,
+				D931D0A5246D2FE1007006BE /* HKPageControl.swift */,
+				D931D0A6246D2FE1007006BE /* HKCycleView.swift */,
+				D931D0A7246D2FE1007006BE /* HKCBannerController.swift */,
+				D931D0A8246D2FE1007006BE /* HKCycleLayout.swift */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
 		D9A75AA6246C276400995FFC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,8 +318,9 @@
 		D9A75ABA246C28BA00995FFC /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				D931D0A1246D2FE1007006BE /* Banner */,
+				D931D079246D2B67007006BE /* JXMarquee_PMD */,
 				041AF4812462B89F00DF511D /* Toast_util */,
-				0470F99923B0AF5200D6F4D3 /* Banner */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -413,31 +447,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D931D083246D2CAB007006BE /* Main.swift in Sources */,
 				041C0DDB245F10EA000D9A0D /* TestView.swift in Sources */,
+				D931D0AD246D2FE2007006BE /* HKCycleView.swift in Sources */,
 				04330EB6238F7D1700CE0714 /* AppDelegate.swift in Sources */,
+				D931D07F246D2B67007006BE /* JXMarqueeViewSwift.swift in Sources */,
 				04330EB8238F7D1700CE0714 /* SceneDelegate.swift in Sources */,
 				041AF48A2462B89F00DF511D /* Toast.swift in Sources */,
 				046295DB2468FB1000F7FE2C /* RegistView.swift in Sources */,
-				0470F9A323B0AF5200D6F4D3 /* HKCycleView.swift in Sources */,
 				046295E3246B8EB600F7FE2C /* LoginView.swift in Sources */,
-				0470F9A123B0AF5200D6F4D3 /* HKCycleViewCell.swift in Sources */,
+				D931D07D246D2B67007006BE /* MarqueeViewController.swift in Sources */,
+				D931D081246D2B8E007006BE /* Main_Button.swift in Sources */,
+				D931D0AB246D2FE2007006BE /* HKCycleViewCell.swift in Sources */,
 				04D17FB923B4B8A500B4212B /* Goods.swift in Sources */,
-				0470F9A423B0AF5200D6F4D3 /* HKCBannerController.swift in Sources */,
+				D931D0AC246D2FE2007006BE /* HKPageControl.swift in Sources */,
+				D931D0AF246D2FE2007006BE /* HKCycleLayout.swift in Sources */,
+				D931D07E246D2B67007006BE /* JXMarqueeView.swift in Sources */,
 				D9A75AA4246C273500995FFC /* Login_DATA.swift in Sources */,
 				046295E5246B968E00F7FE2C /* FindPasswordView.swift in Sources */,
+				D931D0AA246D2FE2007006BE /* HKCBannerView.swift in Sources */,
 				041AF48B2462B89F00DF511D /* ToastCenter.swift in Sources */,
 				041AF4882462B89F00DF511D /* ToastWindow.swift in Sources */,
 				0470F9A723B1BC1400D6F4D3 /* HomeView.swift in Sources */,
-				0470F9A223B0AF5200D6F4D3 /* HKPageControl.swift in Sources */,
 				041AF4872462B89F00DF511D /* KeyboardObserver.swift in Sources */,
 				046295D92468EE0E00F7FE2C /* LoginAndRegistView.swift in Sources */,
 				04330EBA238F7D1700CE0714 /* ContentView.swift in Sources */,
+				D931D0A9246D2FE2007006BE /* BannerData.swift in Sources */,
+				D931D0AE246D2FE2007006BE /* HKCBannerController.swift in Sources */,
 				0495F8042464FBED007A8544 /* YKD_Url.swift in Sources */,
-				0470F9A523B0AF5200D6F4D3 /* HKCycleLayout.swift in Sources */,
 				04330ECA238F800B00CE0714 /* NewsView.swift in Sources */,
 				04D17FB423B353A300B4212B /* StoreView.swift in Sources */,
 				041AF4892462B89F00DF511D /* ToastView.swift in Sources */,
-				0470F9A023B0AF5200D6F4D3 /* HKCBannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

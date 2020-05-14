@@ -108,8 +108,6 @@ public class HKCycleView: UIView {
         setResource(titlesGroup, attributedTitlesGroup: attributedTitlesGroup)
     }
     
-    // MARK: - If you want the effect in the picture below, use the following method
-    // Special reminder, be sure to set the size, otherwise the picture does not display
     
     /// set image on title's left
     public func setTitleImagesGroup(_ titleImagesGroup: [UIImage?], sizeGroup:[CGSize?]) {
