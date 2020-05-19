@@ -54,6 +54,7 @@ struct LoginView: View {
                         }
                         VStack {
                             TextField("请输入手机号码", text: self.$phone)
+//                                .font(Font.system(size: 60))
                                 .frame(width: 270,height: 50)
                                 .padding(.leading)
                         }
@@ -62,18 +63,19 @@ struct LoginView: View {
                     }
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
                     HStack(spacing: 0){
-                        VStack{
+//                        VStack{
                             Image("password")
                                 .renderingMode(.original)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(height: 35)
-                        }
-                        VStack() {
+//                        }
+//                        VStack() {
                             SecureField("请输入密码", text: self.$password)
+//                                .font(.title)
                                 .frame(width: 270,height: 50)
                                 .padding(.leading)
-                        }
+//                        }
                         .contentShape(RoundedRectangle(cornerRadius: 10))
                     }
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
@@ -111,7 +113,6 @@ struct LoginView: View {
                 
                 
             }
-//            .offset(x: viewState.width,y: viewState.height)
             .frame(width: width_main, height: high_main)
             .background(Image("login1")
             .resizable()
@@ -127,10 +128,6 @@ struct LoginView: View {
                         .filter({$0.isKeyWindow}).first
                     keyWindow!.endEditing(true)
             }
-//            .gesture(DragGesture().onChanged{ value in
-//                self.viewState=value.translation
-//            })
-                //测试
             .navigationBarTitle(Text(""))
             .navigationBarHidden(true)
 //            .modifier(FullScreenSwipBack())

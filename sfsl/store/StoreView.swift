@@ -49,23 +49,23 @@ struct StoreView_Previews: PreviewProvider {
 struct ExtractedView: View {
     var width_main = UIScreen.main.bounds.width
     var high_main = UIScreen.main.bounds.height
-    var storeview_data:Sroreview_ = Sroreview_(title: "BTC服务器56T(1%)", money: "5600(USDT)", count: "111", time: "2019",remark:"机器商家时间为7个工作日内")
+    var storeview_data:Sroreview_ = Sroreview_(title: "", money: "", count: "", time: "",remark:"")
     
     var body: some View {
-        NavigationLink(destination: Text("123")){
+        NavigationLink(destination: StoreDetailsView().navigationBarTitle("租用详情")){
             VStack(spacing: 0){
                 HStack(){
                     VStack(){
                         Text("KCOIN")
                             .font(.caption)
                             .foregroundColor(Color.yellow)
-                            .padding(.vertical,1)
-                            
+                            .padding(.horizontal,3)
+                            .padding(.vertical,3)
                         Text("算力")
                             .font(.caption)
                             .foregroundColor(Color.white)
                             .padding(.horizontal,9)
-                            .padding(.vertical,1)
+                            .padding(.vertical,3)
                             .background(Color.yellow)
                         
                     }
@@ -113,14 +113,9 @@ struct ExtractedView: View {
                 .padding()
                 
             }
-//            .background(Image("Image1")
-//            .renderingMode(.original)
-//            .resizable()
-//            )
                 .background(Color.white)
                 .frame(width: width_main - 30)
                 .font(.footnote)
-//                .background(Color("Color"))
                 .cornerRadius(20)
                 .padding()
                 .shadow(radius: 10)
