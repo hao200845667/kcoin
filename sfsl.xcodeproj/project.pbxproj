@@ -188,9 +188,6 @@
 		04330EA9238F7D1700CE0714 = {
 			isa = PBXGroup;
 			children = (
-				D92695402474C52F0071DB1C /* Kingfisher.xcodeproj */,
-				04629608246D375800F7FE2C /* Alamofire.xcodeproj */,
-				0495F7E42464FA64007A8544 /* HandyJSON.xcodeproj */,
 				04330EB4238F7D1700CE0714 /* sfsl */,
 				04330EB3238F7D1700CE0714 /* Products */,
 				047D41CC23ACC381004FF6C5 /* Frameworks */,
@@ -258,6 +255,9 @@
 		047D41CC23ACC381004FF6C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D92695402474C52F0071DB1C /* Kingfisher.xcodeproj */,
+				04629608246D375800F7FE2C /* Alamofire.xcodeproj */,
+				0495F7E42464FA64007A8544 /* HandyJSON.xcodeproj */,
 				0495F7D52464F939007A8544 /* Alamofire.framework */,
 			);
 			name = Frameworks;
