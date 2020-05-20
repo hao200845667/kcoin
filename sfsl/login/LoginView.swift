@@ -17,7 +17,10 @@ struct LoginView: View {
     @State var password:String=""
     @State var viewState = CGSize.zero
     @Binding var showflag:Bool
-
+    @State var bd:TostData = TostData(title: "登陆成功", type: .success)
+    @State var tostflag = false
+    @State var task: DispatchWorkItem?
+    
     var body: some View {
         NavigationView{
             VStack(){
@@ -54,36 +57,43 @@ struct LoginView: View {
                         }
                         VStack {
                             TextField("请输入手机号码", text: self.$phone)
-//                                .font(Font.system(size: 60))
+                                //                                .font(Font.system(size: 60))
                                 .frame(width: 270,height: 50)
                                 .padding(.leading)
                         }
                         .contentShape(RoundedRectangle(cornerRadius: 1))
-
+                        
                     }
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
                     HStack(spacing: 0){
-//                        VStack{
-                            Image("password")
-                                .renderingMode(.original)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: 35)
-//                        }
-//                        VStack() {
-                            SecureField("请输入密码", text: self.$password)
-//                                .font(.title)
-                                .frame(width: 270,height: 50)
-                                .padding(.leading)
-//                        }
-                        .contentShape(RoundedRectangle(cornerRadius: 10))
+                        //                        VStack{
+                        Image("password")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 35)
+                        //                        }
+                        //                        VStack() {
+                        SecureField("请输入密码", text: self.$password)
+                            //                                .font(.title)
+                            .frame(width: 270,height: 50)
+                            .padding(.leading)
+                            //                        }
+                            .contentShape(RoundedRectangle(cornerRadius: 10))
                     }
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
                 }.shadow(color: Color.gray, radius: 5, x: 0, y: 1)
                     .frame(width: width_main - 60)
                     .padding(.top,10)
                 Button(action: {
-                    self.showflag=false
+                    self.tostflag=true
+                    self.task = DispatchWorkItem {
+                        withAnimation {
+                            self.showflag=false
+                        }
+                    }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: self.task!)
+                    
                 }, label: {
                     Text("登陆")
                         .foregroundColor(Color.white)
@@ -91,8 +101,9 @@ struct LoginView: View {
                         .background(Color("loginAndRegist").cornerRadius(30))
                         .shadow(color: Color.gray, radius: 5, x: 0, y: 0)
                         .padding(.top,20)
-//                        .opacity(0.1)
+                    //                        .opacity(0.1)
                 })
+                
                 HStack{
                     NavigationLink(destination: RegistView().navigationBarTitle(Text("")).navigationBarHidden(true)) {
                         Text("立即注册")
@@ -107,12 +118,10 @@ struct LoginView: View {
                 }
                 .padding(.top,20)
                 .frame(width: width_main - 60)
-                
                 Spacer()
                     .padding()
-                
-                
             }
+            .banner(data: self.$bd, show: self.$tostflag)
             .frame(width: width_main, height: high_main)
             .background(Image("login1")
             .resizable()
@@ -130,8 +139,8 @@ struct LoginView: View {
             }
             .navigationBarTitle(Text(""))
             .navigationBarHidden(true)
-//            .modifier(FullScreenSwipBack())
-
+            //            .modifier(FullScreenSwipBack())
+            
         }
     }
     

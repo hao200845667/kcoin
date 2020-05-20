@@ -19,7 +19,7 @@ struct StartView: View {
                 Image(systemName: "cart")
                 Text("挖矿")
             }
-            StoreView().tabItem {
+            Main_MyView().tabItem {
                 Image(systemName: "person")
                 Text("我的")
             }
