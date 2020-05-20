@@ -11,18 +11,21 @@ import SwiftUI
 struct StartView: View {
     var body: some View {
         TabView{
-                 HomeView().tabItem {
-                     Image(systemName: "folder")
-                     Text("首页")
-                 }
-                 
-                 
-                 StoreView().tabItem {
-                     Image(systemName: "cart")
-                     Text("挖矿")
-                 }
-                 
-             }    }
+            HomeView().tabItem {
+                Image(systemName: "folder")
+                Text("首页")
+            }
+            StoreView().tabItem {
+                Image(systemName: "cart")
+                Text("挖矿")
+            }
+            StoreView().tabItem {
+                Image(systemName: "person")
+                Text("我的")
+            }
+        }
+        
+    }
 }
 
 struct StartView_Previews: PreviewProvider {

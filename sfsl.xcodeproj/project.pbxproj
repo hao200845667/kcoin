@@ -13,7 +13,6 @@
 		04330EBC238F7D1800CE0714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04330EBB238F7D1800CE0714 /* Assets.xcassets */; };
 		04330EBF238F7D1800CE0714 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04330EBE238F7D1800CE0714 /* Preview Assets.xcassets */; };
 		04330EC2238F7D1800CE0714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04330EC0238F7D1800CE0714 /* LaunchScreen.storyboard */; };
-		04330ECA238F800B00CE0714 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04330EC9238F800B00CE0714 /* NewsView.swift */; };
 		046295D92468EE0E00F7FE2C /* LoginAndRegistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295D82468EE0E00F7FE2C /* LoginAndRegistView.swift */; };
 		046295DB2468FB1000F7FE2C /* RegistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295DA2468FB1000F7FE2C /* RegistView.swift */; };
 		046295E3246B8EB600F7FE2C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295E2246B8EB600F7FE2C /* LoginView.swift */; };
@@ -40,6 +39,10 @@
 		D926954A2474C53F0071DB1C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D92695462474C52F0071DB1C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D926954B2474C53F0071DB1C /* KingfisherSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92695482474C52F0071DB1C /* KingfisherSwiftUI.framework */; };
 		D926954C2474C53F0071DB1C /* KingfisherSwiftUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D92695482474C52F0071DB1C /* KingfisherSwiftUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D92695542474CB300071DB1C /* Main_MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92695512474CB300071DB1C /* Main_MyView.swift */; };
+		D92695552474CB300071DB1C /* Main_My_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92695522474CB300071DB1C /* Main_My_Button.swift */; };
+		D92695562474CB300071DB1C /* Main_My_But_Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92695532474CB300071DB1C /* Main_My_But_Down.swift */; };
+		D92695592474CB630071DB1C /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92695582474CB630071DB1C /* RemoteImage.swift */; };
 		D931D07D246D2B67007006BE /* MarqueeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D07A246D2B67007006BE /* MarqueeViewController.swift */; };
 		D931D07E246D2B67007006BE /* JXMarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D07B246D2B67007006BE /* JXMarqueeView.swift */; };
 		D931D07F246D2B67007006BE /* JXMarqueeViewSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D07C246D2B67007006BE /* JXMarqueeViewSwift.swift */; };
@@ -120,7 +123,6 @@
 		04330EBE238F7D1800CE0714 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04330EC1238F7D1800CE0714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04330EC3238F7D1800CE0714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04330EC9238F800B00CE0714 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		046295D82468EE0E00F7FE2C /* LoginAndRegistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndRegistView.swift; sourceTree = "<group>"; };
 		046295DA2468FB1000F7FE2C /* RegistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistView.swift; sourceTree = "<group>"; };
 		046295E2246B8EB600F7FE2C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,10 @@
 		04D17FB823B4B8A500B4212B /* Goods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goods.swift; sourceTree = "<group>"; };
 		04D3485624727DE8003DC32D /* StoreDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailsView.swift; sourceTree = "<group>"; };
 		D92695402474C52F0071DB1C /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = "<group>"; };
+		D92695512474CB300071DB1C /* Main_MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_MyView.swift; sourceTree = "<group>"; };
+		D92695522474CB300071DB1C /* Main_My_Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_My_Button.swift; sourceTree = "<group>"; };
+		D92695532474CB300071DB1C /* Main_My_But_Down.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_My_But_Down.swift; sourceTree = "<group>"; };
+		D92695582474CB630071DB1C /* RemoteImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		D931D07A246D2B67007006BE /* MarqueeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeViewController.swift; sourceTree = "<group>"; };
 		D931D07B246D2B67007006BE /* JXMarqueeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXMarqueeView.swift; sourceTree = "<group>"; };
 		D931D07C246D2B67007006BE /* JXMarqueeViewSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXMarqueeViewSwift.swift; sourceTree = "<group>"; };
@@ -205,6 +211,7 @@
 		04330EB4238F7D1700CE0714 /* sfsl */ = {
 			isa = PBXGroup;
 			children = (
+				D92695502474CB300071DB1C /* Main_My_View */,
 				D931D072246D2B11007006BE /* Main */,
 				046295D32468ED7700F7FE2C /* login */,
 				0495F8032464FBED007A8544 /* YKD_Url.swift */,
@@ -219,7 +226,6 @@
 				04330EC0238F7D1800CE0714 /* LaunchScreen.storyboard */,
 				04330EC3238F7D1800CE0714 /* Info.plist */,
 				04330EBD238F7D1800CE0714 /* Preview Content */,
-				04330EC9238F800B00CE0714 /* NewsView.swift */,
 				0462962B246D3B1300F7FE2C /* StartView.swift */,
 			);
 			path = sfsl;
@@ -290,6 +296,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D92695502474CB300071DB1C /* Main_My_View */ = {
+			isa = PBXGroup;
+			children = (
+				D92695512474CB300071DB1C /* Main_MyView.swift */,
+				D92695522474CB300071DB1C /* Main_My_Button.swift */,
+				D92695532474CB300071DB1C /* Main_My_But_Down.swift */,
+			);
+			path = Main_My_View;
+			sourceTree = "<group>";
+		};
+		D92695572474CB630071DB1C /* RoundHttpImage */ = {
+			isa = PBXGroup;
+			children = (
+				D92695582474CB630071DB1C /* RemoteImage.swift */,
+			);
+			path = RoundHttpImage;
+			sourceTree = "<group>";
+		};
 		D931D072246D2B11007006BE /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +350,7 @@
 		D9A75ABA246C28BA00995FFC /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				D92695572474CB630071DB1C /* RoundHttpImage */,
 				041AF4812462B89F00DF511D /* Toast_util */,
 				D931D0A1246D2FE1007006BE /* Banner */,
 				D931D079246D2B67007006BE /* JXMarquee_PMD */,
@@ -474,10 +499,13 @@
 				04D17FB923B4B8A500B4212B /* Goods.swift in Sources */,
 				D931D0AC246D2FE2007006BE /* HKPageControl.swift in Sources */,
 				D931D0AF246D2FE2007006BE /* HKCycleLayout.swift in Sources */,
+				D92695542474CB300071DB1C /* Main_MyView.swift in Sources */,
 				D931D07E246D2B67007006BE /* JXMarqueeView.swift in Sources */,
 				04629628246D3A8000F7FE2C /* Toast.swift in Sources */,
+				D92695552474CB300071DB1C /* Main_My_Button.swift in Sources */,
 				D9A75AA4246C273500995FFC /* Login_DATA.swift in Sources */,
 				046295E5246B968E00F7FE2C /* FindPasswordView.swift in Sources */,
+				D92695592474CB630071DB1C /* RemoteImage.swift in Sources */,
 				D931D0AA246D2FE2007006BE /* HKCBannerView.swift in Sources */,
 				046295F8246D230700F7FE2C /* FullScreenSwipBack.swift in Sources */,
 				0462962C246D3B1300F7FE2C /* StartView.swift in Sources */,
@@ -485,8 +513,8 @@
 				046295D92468EE0E00F7FE2C /* LoginAndRegistView.swift in Sources */,
 				04330EBA238F7D1700CE0714 /* ContentView.swift in Sources */,
 				D931D0AE246D2FE2007006BE /* HKCBannerController.swift in Sources */,
+				D92695562474CB300071DB1C /* Main_My_But_Down.swift in Sources */,
 				0495F8042464FBED007A8544 /* YKD_Url.swift in Sources */,
-				04330ECA238F800B00CE0714 /* NewsView.swift in Sources */,
 				04D17FB423B353A300B4212B /* StoreView.swift in Sources */,
 				04D3485724727DE8003DC32D /* StoreDetailsView.swift in Sources */,
 			);
