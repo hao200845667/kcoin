@@ -35,7 +35,6 @@
 		04D17FB423B353A300B4212B /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D17FB323B353A300B4212B /* StoreView.swift */; };
 		04D17FB923B4B8A500B4212B /* Goods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D17FB823B4B8A500B4212B /* Goods.swift */; };
 		04D3485724727DE8003DC32D /* StoreDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3485624727DE8003DC32D /* StoreDetailsView.swift */; };
-		04D348702474D037003DC32D /* TostModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3486F2474D037003DC32D /* TostModifer.swift */; };
 		D92695492474C53F0071DB1C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92695462474C52F0071DB1C /* Kingfisher.framework */; };
 		D926954A2474C53F0071DB1C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D92695462474C52F0071DB1C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D926954B2474C53F0071DB1C /* KingfisherSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92695482474C52F0071DB1C /* KingfisherSwiftUI.framework */; };
@@ -57,6 +56,7 @@
 		D931D0AF246D2FE2007006BE /* HKCycleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A8246D2FE1007006BE /* HKCycleLayout.swift */; };
 		D93619112476BCFE002F4A13 /* Invite_Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93619102476BCFE002F4A13 /* Invite_Friend.swift */; };
 		D9A75AA4246C273500995FFC /* Login_DATA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A75AA3246C273500995FFC /* Login_DATA.swift */; };
+		D9C723AC247787CB0058DAD6 /* TostModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C723A7247787CB0058DAD6 /* TostModifer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,7 +144,6 @@
 		04D17FB323B353A300B4212B /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		04D17FB823B4B8A500B4212B /* Goods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goods.swift; sourceTree = "<group>"; };
 		04D3485624727DE8003DC32D /* StoreDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailsView.swift; sourceTree = "<group>"; };
-		04D3486F2474D037003DC32D /* TostModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TostModifer.swift; sourceTree = "<group>"; };
 		D92695402474C52F0071DB1C /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = "<group>"; };
 		D92695512474CB300071DB1C /* Main_MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_MyView.swift; sourceTree = "<group>"; };
 		D92695522474CB300071DB1C /* Main_My_Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_My_Button.swift; sourceTree = "<group>"; };
@@ -163,6 +162,7 @@
 		D931D0A8246D2FE1007006BE /* HKCycleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCycleLayout.swift; sourceTree = "<group>"; };
 		D93619102476BCFE002F4A13 /* Invite_Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invite_Friend.swift; sourceTree = "<group>"; };
 		D9A75AA3246C273500995FFC /* Login_DATA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login_DATA.swift; sourceTree = "<group>"; };
+		D9C723A7247787CB0058DAD6 /* TostModifer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TostModifer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +185,7 @@
 		041AF4812462B89F00DF511D /* Toast_util */ = {
 			isa = PBXGroup;
 			children = (
+				D9C723A7247787CB0058DAD6 /* TostModifer.swift */,
 				04629622246D3A7F00F7FE2C /* KeyboardObserver.swift */,
 				04629623246D3A7F00F7FE2C /* Toast.swift */,
 				04629624246D3A7F00F7FE2C /* ToastCenter.swift */,
@@ -288,14 +289,6 @@
 				04D3485624727DE8003DC32D /* StoreDetailsView.swift */,
 			);
 			path = store;
-			sourceTree = "<group>";
-		};
-		04D3486A2474CFE1003DC32D /* Tost */ = {
-			isa = PBXGroup;
-			children = (
-				04D3486F2474D037003DC32D /* TostModifer.swift */,
-			);
-			path = Tost;
 			sourceTree = "<group>";
 		};
 		D92695412474C52F0071DB1C /* Products */ = {
@@ -538,6 +531,7 @@
 				D931D0AB246D2FE2007006BE /* HKCycleViewCell.swift in Sources */,
 				04D17FB923B4B8A500B4212B /* Goods.swift in Sources */,
 				D931D0AC246D2FE2007006BE /* HKPageControl.swift in Sources */,
+				D9C723AC247787CB0058DAD6 /* TostModifer.swift in Sources */,
 				D931D0AF246D2FE2007006BE /* HKCycleLayout.swift in Sources */,
 				D92695542474CB300071DB1C /* Main_MyView.swift in Sources */,
 				D931D07E246D2B67007006BE /* JXMarqueeView.swift in Sources */,
