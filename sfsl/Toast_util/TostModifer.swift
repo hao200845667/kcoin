@@ -61,8 +61,8 @@ struct TostModifer: ViewModifier {
                     .shadow(radius: 20)
                     Spacer()
                 }
-            .zIndex(1)
-                .padding()
+                .zIndex(1)
+                .padding(.top,30)
                 .animation(.easeInOut(duration: 1.2))
                 .transition(AnyTransition.move(edge: .top).combined(with: .opacity))
                 .onTapGesture {

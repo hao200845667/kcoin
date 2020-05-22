@@ -23,7 +23,8 @@ struct StoreView: View {
             ScrollView(.vertical,showsIndicators: false){
                 VStack{
                     ForEach(SroreData){item in
-                        NavigationLink(destination: StoreDetailsView()){
+                        NavigationLink(destination: StoreDetailsView()              .navigationBarTitle(Text("矿机详情"),displayMode: .inline)
+                        ){
                             ExtractedView(storeview_data: item)
                         }
                     }

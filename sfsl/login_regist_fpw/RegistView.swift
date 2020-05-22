@@ -36,7 +36,7 @@ struct RegistView: View {
                     Spacer()
                 }
                 .padding()
-                .padding(.top,20)
+                .padding(.top,30)
                 Spacer()
                 VStack{
                     Image("user")

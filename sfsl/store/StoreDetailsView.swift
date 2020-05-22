@@ -10,7 +10,7 @@ import SwiftUI
 
 struct StoreDetailsView: View {
     var body: some View {
-        NavigationView{
+//        NavigationView{
             ScrollView(.vertical,showsIndicators: false){
                 VStack{
                     HStack{
@@ -127,13 +127,13 @@ struct StoreDetailsView: View {
                     .padding(.top,10)
                 }
                 .padding()
-                .padding(.top,10)
-//                Spacer()
-
+//                .padding(.top)
+                //                Spacer()
+                
             }
             .background(Color("background"))
-              .navigationBarTitle(Text("矿机商城"),displayMode: .inline)
-        }
+//            .edgesIgnoringSafeArea(.top)
+//        }
     }
 }
 
