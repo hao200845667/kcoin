@@ -18,7 +18,7 @@ struct ContentView: View {
                 LoginAndRegistView(showflag: self.$showflag)
             }else{
                 StartView()
-                .animation(.easeInOut)
+//                .animation(.easeInOut)
 //                    .transition(AnyTransition.move(edge: .trailing).combined(with: .opacity))
             }
             
