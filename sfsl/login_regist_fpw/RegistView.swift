@@ -17,7 +17,8 @@ struct RegistView: View {
     @State var sendSms:Bool=true;
     @State var secondsElapsed:Int = 59
     @State var timer: Timer.TimerPublisher = Timer.publish (every: 1, on: .main, in: .common)
-    
+    @State var bd:TostData = TostData(title: "注册成功", type: .success)
+    @State var tostflag = false
     
     var body: some View {
         NavigationView{
@@ -64,7 +65,7 @@ struct RegistView: View {
                             
                         }
                         .contentShape(RoundedRectangle(cornerRadius: 10))
-
+                        
                         
                     }
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
@@ -119,7 +120,7 @@ struct RegistView: View {
                                 
                             }
                             .contentShape(RoundedRectangle(cornerRadius: 10))
-
+                            
                             
                         }
                     }
@@ -138,7 +139,7 @@ struct RegistView: View {
                                 .padding(.leading)
                         }
                         .contentShape(RoundedRectangle(cornerRadius: 10))
-
+                        
                         
                     }
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
@@ -156,7 +157,7 @@ struct RegistView: View {
                                 .padding(.leading)
                         }
                         .contentShape(RoundedRectangle(cornerRadius: 10))
-
+                        
                         
                     }
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
@@ -165,6 +166,7 @@ struct RegistView: View {
                     .frame(width: width_main - 60)
                     .padding(.top,10)
                 Button(action: {
+                    self.tostflag=true
                 }, label: {
                     Text("注册完成")
                         .foregroundColor(Color.white)
@@ -177,6 +179,7 @@ struct RegistView: View {
                 Spacer()
                     .padding()
             }
+            .banner(data: self.$bd, show: self.$tostflag)
             .frame(width: width_main, height: high_main)
             .background(Image("login1")
             .resizable()
@@ -184,16 +187,16 @@ struct RegistView: View {
             .edgesIgnoringSafeArea(.top)
             )
                 .onTapGesture {
-                                  let keyWindow = UIApplication.shared.connectedScenes
-                                      .filter({$0.activationState == .foregroundActive})
-                                      .map({$0 as? UIWindowScene})
-                                      .compactMap({$0})
-                                      .first?.windows
-                                      .filter({$0.isKeyWindow}).first
-                                  keyWindow!.endEditing(true)
-                          }
-                .navigationBarTitle(Text(""))
-                .navigationBarHidden(true)
+                    let keyWindow = UIApplication.shared.connectedScenes
+                        .filter({$0.activationState == .foregroundActive})
+                        .map({$0 as? UIWindowScene})
+                        .compactMap({$0})
+                        .first?.windows
+                        .filter({$0.isKeyWindow}).first
+                    keyWindow!.endEditing(true)
+            }
+            .navigationBarTitle(Text(""))
+            .navigationBarHidden(true)
         }
     }
     

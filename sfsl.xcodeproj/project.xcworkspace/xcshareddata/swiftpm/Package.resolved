@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Introspect",
+        "repositoryURL": "https://github.com/timbersoftware/SwiftUI-Introspect.git",
+        "state": {
+          "branch": "master",
+          "revision": "18c8c7fb0f22a3b86b34d68cb3a5f4e7351774e1",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

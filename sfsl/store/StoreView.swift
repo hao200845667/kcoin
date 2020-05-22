@@ -20,9 +20,6 @@ struct StoreView: View {
     ]
     var body: some View {
         NavigationView{
-            Button(action: {
-                //                self.sheet=true
-            }, label: {
                 ScrollView(.vertical,showsIndicators: false){
                     VStack{
                         ForEach(SroreData){item in
@@ -31,7 +28,6 @@ struct StoreView: View {
                         }
                     }
                 }
-            })
                 .background(Color("background"))
                 .navigationBarTitle(Text("矿机商城"),displayMode: .inline)
             
@@ -52,7 +48,7 @@ struct ExtractedView: View {
     var storeview_data:Sroreview_ = Sroreview_(title: "", money: "", count: "", time: "",remark:"")
     
     var body: some View {
-        NavigationLink(destination: StoreDetailsView().navigationBarTitle("租用详情")){
+        NavigationLink(destination: StoreDetailsView()){
             VStack(spacing: 0){
                 HStack(){
                     VStack(){

@@ -31,7 +31,7 @@ struct Main_MyView: View {
                     
                     Text("KC可用资产")
                     HStack {
-                        Text(self.show_kc ? "123" : "****").font(.system(size: 25))
+                        Text(self.show_kc ? "123" : "****").font(.system(size: 20))
                         Image("icon_visitily").padding(.leading,30)
                             .onTapGesture {
                                 self.show_kc.toggle()
@@ -41,7 +41,7 @@ struct Main_MyView: View {
                     Text("USDT可用资产").padding(.top, 10)
                     HStack {
                         
-                        Text(self.show_usdt ? "123" : "****").font(.system(size: 25))
+                        Text(self.show_usdt ? "123" : "****").font(.system(size: 20))
                         Image("icon_visitily").padding(.leading,30)
                             .onTapGesture {
                                 self.show_usdt.toggle()
@@ -65,8 +65,8 @@ struct Main_MyView: View {
                     .padding(.top, 10)
                 
                 Spacer()
-                
             }
+            .background(Color("background"))
         }
         
         

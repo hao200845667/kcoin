@@ -18,11 +18,14 @@ struct ContentView: View {
                 LoginAndRegistView(showflag: self.$showflag)
             }else{
                 StartView()
+//                .animation(.easeInOut)
+//                    .transition(AnyTransition.move(edge: .trailing).combined(with: .opacity))
             }
             
         }
             //.environment(\.colorScheme, .dark)
-        .animation(Animation.easeInOut)
+    
+
         
     }
 }
