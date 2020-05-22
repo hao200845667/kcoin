@@ -20,16 +20,17 @@ struct StoreView: View {
     ]
     var body: some View {
         NavigationView{
-                ScrollView(.vertical,showsIndicators: false){
-                    VStack{
-                        ForEach(SroreData){item in
+            ScrollView(.vertical,showsIndicators: false){
+                VStack{
+                    ForEach(SroreData){item in
+                        NavigationLink(destination: StoreDetailsView()){
                             ExtractedView(storeview_data: item)
-                            
                         }
                     }
                 }
-                .background(Color("background"))
-                .navigationBarTitle(Text("矿机商城"),displayMode: .inline)
+            }
+            .background(Color("background"))
+            .navigationBarTitle(Text("矿机商城"),displayMode: .inline)
             
         }
         
@@ -48,77 +49,77 @@ struct ExtractedView: View {
     var storeview_data:Sroreview_ = Sroreview_(title: "", money: "", count: "", time: "",remark:"")
     
     var body: some View {
-        NavigationLink(destination: StoreDetailsView()){
-            VStack(spacing: 0){
-                HStack(){
-                    VStack(){
-                        Text("KCOIN")
-                            .font(.caption)
-                            .foregroundColor(Color.yellow)
-                            .padding(.horizontal,3)
-                            .padding(.vertical,3)
-                        Text("算力")
-                            .font(.caption)
-                            .foregroundColor(Color.white)
-                            .padding(.horizontal,9)
-                            .padding(.vertical,3)
-                            .background(Color.yellow)
-                        
-                    }
-                    .overlay(RoundedRectangle(cornerRadius: 3).stroke(Color.yellow,lineWidth: 2))
-                    Text(storeview_data.title)
-                        .foregroundColor(Color.gray)
-                        .padding(.leading,10)
-                    Spacer()
-                }
-                .padding()
-                Divider()
-                HStack(spacing: 100){
-                    VStack{
-                        Text("购买价:")
-                            .foregroundColor(Color.gray)
-                        Spacer()
-                        HStack(spacing: 2){
-                            Text("5000")
-                                .foregroundColor(Color.green)
-                            Text("( KC )")
-                        }
-                    }
-                    VStack{
-                        Text("剩余库存:")
-                            .foregroundColor(Color.gray)
-                        Spacer()
-                        Text(storeview_data.count)
-                    }
+        //        NavigationLink(destination: StoreDetailsView()){
+        VStack(spacing: 0){
+            HStack(){
+                VStack(){
+                    Text("KCOIN")
+                        .font(.caption)
+                        .foregroundColor(Color.yellow)
+                        .padding(.horizontal,3)
+                        .padding(.vertical,3)
+                    Text("算力")
+                        .font(.caption)
+                        .foregroundColor(Color.white)
+                        .padding(.horizontal,9)
+                        .padding(.vertical,3)
+                        .background(Color.yellow)
                     
                 }
-                .padding()
-                Divider()
-                HStack(){
-                    Text(" 购买即时生效 ")
-                        .foregroundColor(Color("Color2"))
-                        .overlay(RoundedRectangle(cornerRadius: 2).stroke(Color("Color2"),lineWidth: 1))
-                    Text(" 有效时间30天 ")
-                        .foregroundColor(Color.blue)
-                        .overlay(RoundedRectangle(cornerRadius: 2).stroke(Color.blue,lineWidth: 1))
-                    Text(" 需要抵押币 ")
-                        .foregroundColor(Color.red)
-                        .overlay(RoundedRectangle(cornerRadius: 2).stroke(Color.red,lineWidth: 1))
+                .overlay(RoundedRectangle(cornerRadius: 3).stroke(Color.yellow,lineWidth: 2))
+                Text(storeview_data.title)
+                    .foregroundColor(Color.gray)
+                    .padding(.leading,10)
+                Spacer()
+            }
+            .padding()
+            Divider()
+            HStack(spacing: 100){
+                VStack{
+                    Text("购买价:")
+                        .foregroundColor(Color.gray)
                     Spacer()
+                    HStack(spacing: 2){
+                        Text("5000")
+                            .foregroundColor(Color.green)
+                        Text("( KC )")
+                    }
                 }
-                .padding()
+                VStack{
+                    Text("剩余库存:")
+                        .foregroundColor(Color.gray)
+                    Spacer()
+                    Text(storeview_data.count)
+                }
                 
             }
-                .background(Color.white)
-                .frame(width: width_main - 30)
-                .font(.footnote)
-                .cornerRadius(20)
-                .padding()
-                .shadow(radius: 10)
+            .padding()
+            Divider()
+            HStack(){
+                Text(" 购买即时生效 ")
+                    .foregroundColor(Color("Color2"))
+                    .overlay(RoundedRectangle(cornerRadius: 2).stroke(Color("Color2"),lineWidth: 1))
+                Text(" 有效时间30天 ")
+                    .foregroundColor(Color.blue)
+                    .overlay(RoundedRectangle(cornerRadius: 2).stroke(Color.blue,lineWidth: 1))
+                Text(" 需要抵押币 ")
+                    .foregroundColor(Color.red)
+                    .overlay(RoundedRectangle(cornerRadius: 2).stroke(Color.red,lineWidth: 1))
+                Spacer()
+            }
+            .padding()
             
         }
+        .background(Color.white)
+        .frame(width: width_main - 30)
+        .font(.footnote)
+        .cornerRadius(20)
+        .padding()
+        .shadow(radius: 10)
         
     }
+    
+    //    }
     
     
 }
