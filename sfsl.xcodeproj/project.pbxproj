@@ -54,6 +54,7 @@
 		D931D0AD246D2FE2007006BE /* HKCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A6246D2FE1007006BE /* HKCycleView.swift */; };
 		D931D0AE246D2FE2007006BE /* HKCBannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A7246D2FE1007006BE /* HKCBannerController.swift */; };
 		D931D0AF246D2FE2007006BE /* HKCycleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A8246D2FE1007006BE /* HKCycleLayout.swift */; };
+		D93619112476BCFE002F4A13 /* Invite_Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93619102476BCFE002F4A13 /* Invite_Friend.swift */; };
 		D9A75AA4246C273500995FFC /* Login_DATA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A75AA3246C273500995FFC /* Login_DATA.swift */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +159,7 @@
 		D931D0A6246D2FE1007006BE /* HKCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCycleView.swift; sourceTree = "<group>"; };
 		D931D0A7246D2FE1007006BE /* HKCBannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCBannerController.swift; sourceTree = "<group>"; };
 		D931D0A8246D2FE1007006BE /* HKCycleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCycleLayout.swift; sourceTree = "<group>"; };
+		D93619102476BCFE002F4A13 /* Invite_Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invite_Friend.swift; sourceTree = "<group>"; };
 		D9A75AA3246C273500995FFC /* Login_DATA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login_DATA.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,22 +213,19 @@
 		04330EB4238F7D1700CE0714 /* sfsl */ = {
 			isa = PBXGroup;
 			children = (
+				D936190E2476B903002F4A13 /* Bean */,
 				D92695502474CB300071DB1C /* Main_My_View */,
 				D931D072246D2B11007006BE /* Main */,
-				046295D32468ED7700F7FE2C /* login */,
-				0495F8032464FBED007A8544 /* YKD_Url.swift */,
-				D9A75AA3246C273500995FFC /* Login_DATA.swift */,
+				046295D32468ED7700F7FE2C /* login_regist_fpw */,
 				04D17FB723B4B87C00B4212B /* store */,
 				04330EB5238F7D1700CE0714 /* AppDelegate.swift */,
 				046295F7246D230700F7FE2C /* FullScreenSwipBack.swift */,
 				04330EB7238F7D1700CE0714 /* SceneDelegate.swift */,
-				04330EB9238F7D1700CE0714 /* ContentView.swift */,
 				D9A75ABA246C28BA00995FFC /* Util */,
 				04330EBB238F7D1800CE0714 /* Assets.xcassets */,
 				04330EC0238F7D1800CE0714 /* LaunchScreen.storyboard */,
 				04330EC3238F7D1800CE0714 /* Info.plist */,
 				04330EBD238F7D1800CE0714 /* Preview Content */,
-				0462962B246D3B1300F7FE2C /* StartView.swift */,
 			);
 			path = sfsl;
 			sourceTree = "<group>";
@@ -239,15 +238,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		046295D32468ED7700F7FE2C /* login */ = {
+		046295D32468ED7700F7FE2C /* login_regist_fpw */ = {
 			isa = PBXGroup;
 			children = (
+				04330EB9238F7D1700CE0714 /* ContentView.swift */,
+				0462962B246D3B1300F7FE2C /* StartView.swift */,
 				046295D82468EE0E00F7FE2C /* LoginAndRegistView.swift */,
 				046295DA2468FB1000F7FE2C /* RegistView.swift */,
 				046295E2246B8EB600F7FE2C /* LoginView.swift */,
 				046295E4246B968E00F7FE2C /* FindPasswordView.swift */,
 			);
-			path = login;
+			path = login_regist_fpw;
 			sourceTree = "<group>";
 		};
 		04629609246D375800F7FE2C /* Products */ = {
@@ -317,6 +318,7 @@
 		D931D072246D2B11007006BE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D936190F2476BCCF002F4A13 /* Main_View */,
 				0470F9A623B1BC1400D6F4D3 /* HomeView.swift */,
 				D931D080246D2B8E007006BE /* Main_Button.swift */,
 				D931D082246D2CAB007006BE /* Main.swift */,
@@ -347,9 +349,34 @@
 			path = Banner;
 			sourceTree = "<group>";
 		};
+		D936190D2476B8EF002F4A13 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0495F8032464FBED007A8544 /* YKD_Url.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D936190E2476B903002F4A13 /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				D9A75AA3246C273500995FFC /* Login_DATA.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		D936190F2476BCCF002F4A13 /* Main_View */ = {
+			isa = PBXGroup;
+			children = (
+				D93619102476BCFE002F4A13 /* Invite_Friend.swift */,
+			);
+			path = Main_View;
+			sourceTree = "<group>";
+		};
 		D9A75ABA246C28BA00995FFC /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				D936190D2476B8EF002F4A13 /* API */,
 				D92695572474CB630071DB1C /* RoundHttpImage */,
 				041AF4812462B89F00DF511D /* Toast_util */,
 				D931D0A1246D2FE1007006BE /* Banner */,
@@ -389,6 +416,9 @@
 		04330EAA238F7D1700CE0714 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "隔壁家的电冰箱。";
@@ -514,6 +544,7 @@
 				04330EBA238F7D1700CE0714 /* ContentView.swift in Sources */,
 				D931D0AE246D2FE2007006BE /* HKCBannerController.swift in Sources */,
 				D92695562474CB300071DB1C /* Main_My_But_Down.swift in Sources */,
+				D93619112476BCFE002F4A13 /* Invite_Friend.swift in Sources */,
 				0495F8042464FBED007A8544 /* YKD_Url.swift in Sources */,
 				04D17FB423B353A300B4212B /* StoreView.swift in Sources */,
 				04D3485724727DE8003DC32D /* StoreDetailsView.swift in Sources */,

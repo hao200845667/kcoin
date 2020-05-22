@@ -17,30 +17,31 @@ struct HomeView: View {
     
     
     var body: some SwiftUI.View {
-        
+        ScrollView(.vertical,showsIndicators: false){
         VStack {
-            ScrollView(.vertical,showsIndicators: false){
-                HKCBannerView(banner_url:banner_url)
-                    .frame(width: UIScreen.main.bounds.width, height: 180)
-                    .blur(radius: self.showImage ? 0 : 3)
-                HStack {
-                    Image("icon_notification").padding(.leading, 10)
-                    JXMarqueeViewSwift(str: "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试")
-                        .frame(height: 20)
-                        .padding(.top,1)
-                        .padding(.leading,-5)
-                    Text("更多")
-                        .foregroundColor(.orange)
-                        .italic()
-                        .shadow(color: .black, radius: 0.2, x: 0, y: 2)
-                        .foregroundColor(Color.gray)
-                        .fixedSize()
-                        .padding(.trailing, 10)
-                }
-                .blur(radius: self.showImage ? 0 : 5)
-                
+            HKCBannerView(banner_url:banner_url)
+                .frame(width: UIScreen.main.bounds.width, height: 180)
+                .blur(radius: self.showImage ? 0 : 3)
+            
+            HStack {
+                Image("icon_notification").padding(.leading, 10)
+                JXMarqueeViewSwift(str: "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试")
+                    .frame(height: 20)
+                    .padding(.top,1)
+                    .padding(.leading,-5)
+                Text("更多")
+                    .foregroundColor(.orange)
+                    .italic()
+                    .shadow(color: .black, radius: 0.2, x: 0, y: 2)
+                    .foregroundColor(Color.gray)
+                    .fixedSize()
+                    .padding(.trailing, 10)
+            }
+            .blur(radius: self.showImage ? 0 : 5)
+            
                 Main_Button()
                     .blur(radius: self.showImage ? 0 : 5)
+                .padding(.top,30)
                 
                 HStack {
                     Text("新人新福利")
@@ -68,7 +69,7 @@ struct HomeView: View {
                 
                 Spacer()
             }
-            .padding(.top,30)
+            
             .background(Color("background"))
             .edgesIgnoringSafeArea(.top)
         }

@@ -43,7 +43,7 @@ class HKCBannerController: UIViewController {
             
             print("dianjil\(index+1 )zhang picture")
         }
-        
+      
         self.view.addSubview(cyclePictureView)
     }
 }
