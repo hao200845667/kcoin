@@ -32,7 +32,6 @@ struct StoreView: View {
             }
             .background(Color("background"))
             .navigationBarTitle(Text("矿机商城"),displayMode: .inline)
-            
         }
         
     }

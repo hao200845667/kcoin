@@ -66,9 +66,9 @@ struct Main_MyView: View {
                 
                 Spacer()
             }
-            .background(Color("background"))
         }
-        
+        .background(Color("background"))
+        .edgesIgnoringSafeArea(.top)
         
     }
 }

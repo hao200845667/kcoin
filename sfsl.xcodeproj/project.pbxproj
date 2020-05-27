@@ -689,6 +689,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"sfsl/Preview Content\"";
 				DEVELOPMENT_TEAM = 7NH6FRR4HZ;
 				ENABLE_BITCODE = NO;
@@ -699,7 +700,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pro.sfsl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfsl.demo;
 				PRODUCT_NAME = "KC Miner";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -712,6 +713,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"sfsl/Preview Content\"";
 				DEVELOPMENT_TEAM = 7NH6FRR4HZ;
 				ENABLE_BITCODE = NO;
@@ -722,7 +724,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pro.sfsl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfsl.demo;
 				PRODUCT_NAME = "KC Miner";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

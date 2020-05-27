@@ -12,7 +12,7 @@ import HandyJSON
 struct NSDATA: HandyJSON{
     var resp_code: String?
     var resp_message: String?
-    var result: LOGIN_DATA?
+    var result: AnyObject?
 }
 struct LOGIN_DATA: HandyJSON {
    
