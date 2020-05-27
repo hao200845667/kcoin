@@ -59,9 +59,6 @@ struct LoginAndRegistView: View {
             .modifier(FullScreenSwipBack())
 
         }
-        
-        //                                        .environment(\.colorScheme, .dark)
-        
     }
 }
 

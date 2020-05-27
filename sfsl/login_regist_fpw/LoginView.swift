@@ -13,11 +13,11 @@ struct LoginView: View {
     var high_main = UIScreen.main.bounds.height
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    @State var phone:String=""
-    @State var password:String=""
+    @State var phone:String = ""
+    @State var password:String = ""
     @State var viewState = CGSize.zero
     @Binding var showflag:Bool
-    @State var bd:TostData = TostData(title: "登陆成功", type: .success)
+    @State var bd:TostData = TostData(title: "", type: .success)
     @State var tostflag = false
     @State var task: DispatchWorkItem?
     
@@ -48,37 +48,28 @@ struct LoginView: View {
                 .frame(width: 100,height: 100)
                 Group{
                     HStack(spacing: 0){
-                        VStack{
-                            Image("phone")
-                                .renderingMode(.original)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: 35)
-                        }
-                        VStack {
-                            TextField("请输入手机号码", text: self.$phone)
-                                //                                .font(Font.system(size: 60))
-                                .frame(width: 270,height: 50)
-                                .padding(.leading)
-                        }
-                        .contentShape(RoundedRectangle(cornerRadius: 1))
+                        Image("phone")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 35)
+                        TextField("请输入手机号码", text: self.$phone)
+                            //                                .font(Font.system(size: 60))
+                            .frame(width: 270,height: 50)
+                            .padding(.leading)
+                            .contentShape(RoundedRectangle(cornerRadius: 1))
                         
                     }
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
                     HStack(spacing: 0){
-                        //                        VStack{
                         Image("password")
                             .renderingMode(.original)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(height: 35)
-                        //                        }
-                        //                        VStack() {
                         SecureField("请输入密码", text: self.$password)
-                            //                                .font(.title)
                             .frame(width: 270,height: 50)
                             .padding(.leading)
-                            //                        }
                             .contentShape(RoundedRectangle(cornerRadius: 10))
                     }
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
@@ -86,14 +77,22 @@ struct LoginView: View {
                     .frame(width: width_main - 60)
                     .padding(.top,10)
                 Button(action: {
-                    self.tostflag=true
-                    self.task = DispatchWorkItem {
-                        withAnimation {
-                            self.showflag=false
+                    if self.phone == "" || self.password == "" {
+                        self.bd.title = "请输入正确账户"
+                        self.bd.type = .waring
+                        self.tostflag=true
+                    }else{
+                        self.bd.title = "登陆成功"
+                        self.bd.type = .success
+                        self.tostflag=true
+                        self.task = DispatchWorkItem {
+                            withAnimation {
+                                self.showflag=false
+                            }
                         }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: self.task!)
+                        
                     }
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: self.task!)
-                    
                 }, label: {
                     Text("登陆")
                         .foregroundColor(Color.white)
