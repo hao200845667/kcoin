@@ -55,6 +55,8 @@
 		D931D0AE246D2FE2007006BE /* HKCBannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A7246D2FE1007006BE /* HKCBannerController.swift */; };
 		D931D0AF246D2FE2007006BE /* HKCycleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931D0A8246D2FE1007006BE /* HKCycleLayout.swift */; };
 		D93619112476BCFE002F4A13 /* Invite_Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93619102476BCFE002F4A13 /* Invite_Friend.swift */; };
+		D971E254247E4BC20030B94D /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E253247E4BC20030B94D /* NavigationBarModifier.swift */; };
+		D98EA37D247E61FB008595A1 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EA37C247E61FB008595A1 /* Information.swift */; };
 		D9A75AA4246C273500995FFC /* Login_DATA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A75AA3246C273500995FFC /* Login_DATA.swift */; };
 		D9C723AC247787CB0058DAD6 /* TostModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C723A7247787CB0058DAD6 /* TostModifer.swift */; };
 /* End PBXBuildFile section */
@@ -161,6 +163,8 @@
 		D931D0A7246D2FE1007006BE /* HKCBannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCBannerController.swift; sourceTree = "<group>"; };
 		D931D0A8246D2FE1007006BE /* HKCycleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCycleLayout.swift; sourceTree = "<group>"; };
 		D93619102476BCFE002F4A13 /* Invite_Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invite_Friend.swift; sourceTree = "<group>"; };
+		D971E253247E4BC20030B94D /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		D98EA37C247E61FB008595A1 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		D9A75AA3246C273500995FFC /* Login_DATA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login_DATA.swift; sourceTree = "<group>"; };
 		D9C723A7247787CB0058DAD6 /* TostModifer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TostModifer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,7 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				D936190E2476B903002F4A13 /* Bean */,
-				D92695502474CB300071DB1C /* Main_My_View */,
+				D92695502474CB300071DB1C /* Main_My */,
 				D931D072246D2B11007006BE /* Main */,
 				046295D32468ED7700F7FE2C /* login_regist_fpw */,
 				04D17FB723B4B87C00B4212B /* store */,
@@ -300,14 +304,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D92695502474CB300071DB1C /* Main_My_View */ = {
+		D92695502474CB300071DB1C /* Main_My */ = {
 			isa = PBXGroup;
 			children = (
+				D98EA377247E61DB008595A1 /* My_View */,
 				D92695512474CB300071DB1C /* Main_MyView.swift */,
 				D92695522474CB300071DB1C /* Main_My_Button.swift */,
 				D92695532474CB300071DB1C /* Main_My_But_Down.swift */,
 			);
-			path = Main_My_View;
+			path = Main_My;
 			sourceTree = "<group>";
 		};
 		D92695572474CB630071DB1C /* RoundHttpImage */ = {
@@ -376,6 +381,14 @@
 			path = Main_View;
 			sourceTree = "<group>";
 		};
+		D98EA377247E61DB008595A1 /* My_View */ = {
+			isa = PBXGroup;
+			children = (
+				D98EA37C247E61FB008595A1 /* Information.swift */,
+			);
+			path = My_View;
+			sourceTree = "<group>";
+		};
 		D9A75ABA246C28BA00995FFC /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +397,7 @@
 				041AF4812462B89F00DF511D /* Toast_util */,
 				D931D0A1246D2FE1007006BE /* Banner */,
 				D931D079246D2B67007006BE /* JXMarquee_PMD */,
+				D971E253247E4BC20030B94D /* NavigationBarModifier.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -525,6 +539,7 @@
 				0462962A246D3A8000F7FE2C /* ToastWindow.swift in Sources */,
 				04629627246D3A8000F7FE2C /* KeyboardObserver.swift in Sources */,
 				046295DB2468FB1000F7FE2C /* RegistView.swift in Sources */,
+				D971E254247E4BC20030B94D /* NavigationBarModifier.swift in Sources */,
 				046295E3246B8EB600F7FE2C /* LoginView.swift in Sources */,
 				D931D07D246D2B67007006BE /* MarqueeViewController.swift in Sources */,
 				D931D081246D2B8E007006BE /* Main_Button.swift in Sources */,
@@ -532,6 +547,7 @@
 				04D17FB923B4B8A500B4212B /* Goods.swift in Sources */,
 				D931D0AC246D2FE2007006BE /* HKPageControl.swift in Sources */,
 				D9C723AC247787CB0058DAD6 /* TostModifer.swift in Sources */,
+				D98EA37D247E61FB008595A1 /* Information.swift in Sources */,
 				D931D0AF246D2FE2007006BE /* HKCycleLayout.swift in Sources */,
 				D92695542474CB300071DB1C /* Main_MyView.swift in Sources */,
 				D931D07E246D2B67007006BE /* JXMarqueeView.swift in Sources */,

@@ -57,6 +57,7 @@ struct LoginAndRegistView: View {
                 .navigationBarTitle(Text(""))
                 .navigationBarHidden(true)
             .modifier(FullScreenSwipBack())
+           
 
         }
     }
