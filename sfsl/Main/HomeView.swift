@@ -11,6 +11,7 @@ import SwiftUI
 //测试Again
 struct HomeView: View {
     @State var showImage: Bool = true
+    @State var kcDetails: Bool = false
     var banner_url: [String] = ["http://sfsl.huitongshiye.cn/uploads/images/2019/11-06/80ce71ae3907b43bbea2b1d9bcddfffc.jpg", "https://sifangsuanliimg.oss-cn-shanghai.aliyuncs.com/uploads/20191218/b917b08872e78a39c2b8ae7ca32eacb9.png","http://sfsl.huitongshiye.cn/uploads/images/2019/11-07/10d48d1123853f8d4e250d508a93c5e1.jpg","http://ww1.sinaimg.cn/orj480/736f0c7ejw1f659dt6n94j20bu06k754.jpg"]
     
     var banner_kc_url:[String] = ["http://sfsl.huitongshiye.cn/uploads/images/2019/11-06/80ce71ae3907b43bbea2b1d9bcddfffc.jpg"]
@@ -22,7 +23,6 @@ struct HomeView: View {
                 HKCBannerView(banner_url:banner_url)
                     .frame(width: UIScreen.main.bounds.width, height: 180)
                     .blur(radius: self.showImage ? 0 : 3)
-                
                 HStack {
                     Image("icon_notification").padding(.leading, 10)
                     JXMarqueeViewSwift(str: "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试")
@@ -64,9 +64,34 @@ struct HomeView: View {
                 .blur(radius: self.showImage ? 0 : 5)
                 
                 HKCBannerView(banner_url:banner_kc_url)
-                    .frame(width: UIScreen.main.bounds.width, height: 180)
-                    .blur(radius: self.showImage ? 0 :5)
-                
+                    .onTapGesture {
+                        self.kcDetails.toggle()
+                }
+                .frame(width: UIScreen.main.bounds.width, height: 180)
+                .blur(radius: self.showImage ? 0 :5)
+                .sheet(isPresented: self.$kcDetails){
+                    VStack(){
+                        ZStack(){
+                            Text("kc简介")
+                            HStack{
+                                Spacer()
+                                Button(action: {
+                                    self.kcDetails.toggle()
+                                }, label: {
+                                    Text("关闭")
+                                })
+                            }
+                        }
+                        .padding()
+                        .background(Color.gray)
+                        HKCBannerView(banner_url:self.banner_kc_url)
+                            .frame(width: UIScreen.main.bounds.width, height: 180)
+                        Text("123")
+                        Spacer()
+                    }
+                    //                    .padding(.top, 10)
+                    
+                }
                 Spacer()
             }
             .padding()

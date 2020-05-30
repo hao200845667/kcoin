@@ -11,9 +11,9 @@ import SwiftUI
 struct ContentView: View {
     
     @State var showflag:Bool = true
-    
+
     var body: some View {
-        VStack{
+        ZStack{
             if showflag{
                 LoginAndRegistView(showflag: self.$showflag)
             }else{

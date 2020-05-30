@@ -28,6 +28,9 @@ struct StoreView: View {
                             ExtractedView(storeview_data: item)
                         }
                     }
+                    .onAppear {
+                        NSLog("🚩执行1")
+                    }
                 }
             }
             .background(Color("background"))
@@ -116,7 +119,11 @@ struct ExtractedView: View {
         .cornerRadius(20)
         .padding()
         .shadow(radius: 10)
-        
+        .onAppear {
+            NSLog("🚩第二页")
+        }.onDisappear {
+            NSLog("---------2️⃣ SecondView disappear-------")
+        }
     }
     
     //    }

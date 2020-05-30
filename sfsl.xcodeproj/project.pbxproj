@@ -18,9 +18,9 @@
 		046295E3246B8EB600F7FE2C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295E2246B8EB600F7FE2C /* LoginView.swift */; };
 		046295E5246B968E00F7FE2C /* FindPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295E4246B968E00F7FE2C /* FindPasswordView.swift */; };
 		046295F8246D230700F7FE2C /* FullScreenSwipBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046295F7246D230700F7FE2C /* FullScreenSwipBack.swift */; };
-		04629618246D390500F7FE2C /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495F7F02464FA64007A8544 /* HandyJSON.framework */; };
-		04629619246D390900F7FE2C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0462960D246D375800F7FE2C /* Alamofire.framework */; };
-		0462961A246D390900F7FE2C /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0462960D246D375800F7FE2C /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04629618246D390500F7FE2C /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495F7F02464FA64007A8544 /* HandyJSON.framework */; platformFilter = ios; };
+		04629619246D390900F7FE2C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0462960D246D375800F7FE2C /* Alamofire.framework */; platformFilter = ios; };
+		0462961A246D390900F7FE2C /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0462960D246D375800F7FE2C /* Alamofire.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04629626246D3A8000F7FE2C /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04629621246D3A7F00F7FE2C /* ToastView.swift */; };
 		04629627246D3A8000F7FE2C /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04629622246D3A7F00F7FE2C /* KeyboardObserver.swift */; };
 		04629628246D3A8000F7FE2C /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04629623246D3A7F00F7FE2C /* Toast.swift */; };
@@ -29,8 +29,8 @@
 		0462962C246D3B1300F7FE2C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462962B246D3B1300F7FE2C /* StartView.swift */; };
 		04629637246D414200F7FE2C /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 04629636246D414200F7FE2C /* Introspect */; };
 		0470F9A723B1BC1400D6F4D3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470F9A623B1BC1400D6F4D3 /* HomeView.swift */; };
-		0495F7FF2464FA70007A8544 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495F7F02464FA64007A8544 /* HandyJSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		0495F8002464FA70007A8544 /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0495F7F02464FA64007A8544 /* HandyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0495F7FF2464FA70007A8544 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495F7F02464FA64007A8544 /* HandyJSON.framework */; platformFilter = ios; settings = {ATTRIBUTES = (Weak, ); }; };
+		0495F8002464FA70007A8544 /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0495F7F02464FA64007A8544 /* HandyJSON.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0495F8042464FBED007A8544 /* YKD_Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495F8032464FBED007A8544 /* YKD_Url.swift */; };
 		04D17FB423B353A300B4212B /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D17FB323B353A300B4212B /* StoreView.swift */; };
 		04D17FB923B4B8A500B4212B /* Goods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D17FB823B4B8A500B4212B /* Goods.swift */; };
@@ -704,6 +704,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "sfsl/KC Miner.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"sfsl/Preview Content\"";
@@ -718,6 +719,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sfsl.demo;
 				PRODUCT_NAME = "KC Miner";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -728,6 +730,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "sfsl/KC Miner.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"sfsl/Preview Content\"";
@@ -742,6 +745,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sfsl.demo;
 				PRODUCT_NAME = "KC Miner";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
