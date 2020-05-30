@@ -8,7 +8,7 @@
 
 import UIKit
 import HandyJSON
-
+//猜猜猜
 struct NSDATA: HandyJSON{
     var resp_code: String?
     var resp_message: String?
