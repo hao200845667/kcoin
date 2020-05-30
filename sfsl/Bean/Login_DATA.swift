@@ -16,6 +16,7 @@ struct NSDATA: HandyJSON{
 }
 //测
 //测试
+//测22
 struct LOGIN_DATA: HandyJSON {
    
     var modifyDate: String?
