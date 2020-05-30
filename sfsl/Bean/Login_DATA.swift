@@ -8,16 +8,12 @@
 
 import UIKit
 import HandyJSON
-//猜猜猜
+//user2
 struct NSDATA: HandyJSON{
     var resp_code: String?
     var resp_message: String?
     var result: AnyObject?
 }
-//测
-//测试
-//测222
-//123
 struct LOGIN_DATA: HandyJSON {
    
     var modifyDate: String?
