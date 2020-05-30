@@ -9,6 +9,7 @@
 import UIKit
 import HandyJSON
 //user2
+//user1
 struct NSDATA: HandyJSON{
     var resp_code: String?
     var resp_message: String?
