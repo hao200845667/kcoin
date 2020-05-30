@@ -14,6 +14,7 @@ struct NSDATA: HandyJSON{
     var resp_message: String?
     var result: AnyObject?
 }
+//测
 struct LOGIN_DATA: HandyJSON {
    
     var modifyDate: String?
