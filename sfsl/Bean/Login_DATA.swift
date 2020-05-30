@@ -19,6 +19,7 @@ struct NSDATA: HandyJSON{
 //测222
 //123
 //456
+//789
 struct LOGIN_DATA: HandyJSON {
    
     var modifyDate: String?
