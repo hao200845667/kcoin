@@ -1,16 +1,17 @@
 
 import SwiftUI
 
-struct HKCBannerView: UIViewControllerRepresentable{
-   
-    
-      var banner_url: [String]
-        
+struct HKCBannerView: UIViewControllerRepresentable {
+    @State var banner_url: [String] 
     func makeUIViewController(context: UIViewControllerRepresentableContext<HKCBannerView>) -> HKCBannerController {
-        return HKCBannerController()
+        let HBC = HKCBannerController()
+        HBC.createCyclePicture1(pic: banner_url)
+        return HBC
     }
-    func updateUIViewController(_ uiViewController: HKCBannerController, context:Context) {
-        uiViewController.createCyclePicture1(pic: banner_url)
 
-    }
+    func updateUIViewController(_ uiViewController: HKCBannerController, context: Context) {}
+
 }
+
+
+

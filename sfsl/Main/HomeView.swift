@@ -7,8 +7,7 @@
 //
 
 import SwiftUI
-//测试
-//测试Again
+
 struct HomeView: View {
     @State var showImage: Bool = true
     @State var kcDetails: Bool = false
@@ -20,7 +19,7 @@ struct HomeView: View {
     var body: some SwiftUI.View {
         ScrollView(.vertical,showsIndicators: false){
             VStack {
-                HKCBannerView(banner_url:banner_url)
+                HKCBannerView(banner_url: banner_url)
                     .frame(width: UIScreen.main.bounds.width, height: 180)
                     .blur(radius: self.showImage ? 0 : 3)
                 HStack {
@@ -63,7 +62,7 @@ struct HomeView: View {
                 }
                 .blur(radius: self.showImage ? 0 : 5)
                 
-                HKCBannerView(banner_url:banner_kc_url)
+                HKCBannerView(banner_url: self.banner_kc_url)
                     .onTapGesture {
                         self.kcDetails.toggle()
                 }
@@ -84,7 +83,7 @@ struct HomeView: View {
                         }
                         .padding()
                         .background(Color.gray)
-                        HKCBannerView(banner_url:self.banner_kc_url)
+                        HKCBannerView(banner_url: self.banner_kc_url)
                             .frame(width: UIScreen.main.bounds.width, height: 180)
                         Text("123")
                         Spacer()

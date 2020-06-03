@@ -10,13 +10,14 @@ import SwiftUI
 
 struct JXMarqueeViewSwift: UIViewControllerRepresentable {
  
-    var str : String
+   @State var str : String
     func makeUIViewController(context: UIViewControllerRepresentableContext<JXMarqueeViewSwift>) ->
         MarqueeViewController {
-           return MarqueeViewController()
+            let MVC = MarqueeViewController()
+            MVC.mscrolllabel_data(data: str)
+           return MVC
        }
        func updateUIViewController(_ uiViewController: MarqueeViewController, context:Context) {
-           uiViewController.mscrolllabel_data(data: str)
-           
+     
        }
 }
